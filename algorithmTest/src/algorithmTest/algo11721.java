@@ -16,6 +16,7 @@ public class algo11721 {
         		System.out.println();
         	}
         	System.out.print(input.charAt(i)); 
+        	//커밋테스트
         }
 	}
 
