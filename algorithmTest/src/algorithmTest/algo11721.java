@@ -16,7 +16,7 @@ public class algo11721 {
         		System.out.println();
         	}
         	System.out.print(input.charAt(i)); 
-        	//Ŀ���׽�Ʈ
+        	//한글깨짐 바꿈
         }
 	}
 
