@@ -15,8 +15,7 @@ public class algo1978 {
 	public static void main(String[] args) {
 		
 		int sosu_count = 0;
-		int[] array = new int[100];
-		
+		int[] array = new int[1000];
 		
 		Scanner sc = new Scanner(System.in);
 		
