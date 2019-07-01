@@ -37,7 +37,7 @@ public class algo2750Quick {
 		algo2750Quick quick = new algo2750Quick();
 		quick.quickSort(array, 0, array.length-1);
 		for(int a : array) {
-			System.out.println(a + " ");
+			System.out.print(a + " ");
 		}
 		
 		

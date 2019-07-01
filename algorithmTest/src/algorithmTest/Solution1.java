@@ -1,6 +1,7 @@
 package algorithmTest;
 
 import java.util.HashSet;
+
 import java.util.Set;
 
 //you can also use imports, for example:
@@ -13,7 +14,7 @@ class Solution { //얘가 제일 잘 돌아감.(Set, HashSet사용시)
 	   public int solution(int[] A) {
 	        // write your code in Java SE 8
 	        Set<Integer> set = new HashSet<>();
-	       
+	      
 	        for(int item : A){
 	            if(set.contains(item)){
 	                set.remove(item);
@@ -25,8 +26,8 @@ class Solution { //얘가 제일 잘 돌아감.(Set, HashSet사용시)
 	        return set.iterator().next();
 	        
 	    }
-
-/*	   public int solution(int[] A) {
+/*
+	   public int solution(int[] A) {
 	        // write your code in Java SE 8
 	        List<Integer> list = new ArrayList<>();
 	       

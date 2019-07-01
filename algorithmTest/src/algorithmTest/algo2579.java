@@ -8,8 +8,8 @@ public class algo2579 {
 		
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		int stair[] = new int[300];
-		int sum[] = new int[300];
+		int stair[] = new int[301];
+		int sum[] = new int[301];
 		for(int i=0; i<num; i++) {
 			stair[i] = sc.nextInt();
 		}

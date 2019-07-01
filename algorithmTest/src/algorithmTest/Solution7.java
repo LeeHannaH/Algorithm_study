@@ -11,13 +11,12 @@ public class Solution7 {
 				stack.push(S.charAt(i));
 			}else {
 				if(stack.peek()=='('&&S.charAt(i)==')') {
-					stack.push(S.charAt(i));
-				}else {
 					stack.pop();
+				}else {
+					stack.push(S.charAt(i));
 				}
 			}
 		}
-		System.out.println(stack.isEmpty());
 		if(stack.isEmpty()) return 1;
 		return 0;
     }

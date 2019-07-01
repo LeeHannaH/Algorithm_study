@@ -20,7 +20,7 @@ public class algo2178 {
 	static int N; // 세로크기
 	static int M; // 가로크기
 	static int map[][]; // 맵 저장
-	static boolean isvisisted[][]; // 방문여부확인
+	static boolean isvisited[][]; // 방문여부확인
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class algo2178 {
 		M = Integer.parseInt(arr[1]);
 
 		map = new int[N][M];
-		isvisisted = new boolean[N][M];
+		isvisited = new boolean[N][M];
 
 		for (int i = 0; i < N; i++) {
 			word = input.nextLine();
@@ -51,7 +51,7 @@ public class algo2178 {
 		Queue<POINT> q = new LinkedList<>();
 
 		q.offer(P);
-		isvisisted[P.y][P.x] = true;
+		isvisited[P.y][P.x] = true;
 
 		int x[] = { 1, 0, -1, 0 };
 		int y[] = { 0, 1, 0, -1 };
@@ -69,8 +69,8 @@ public class algo2178 {
 				int p_y = y[i] + p.y;
 
 				// 맵 범위안에있고 방문하지않았었고 갈수있는 길일경우
-				if (p_x >= 0 && p_x < M && p_y >= 0 && p_y < N && isvisisted[p_y][p_x] == false && map[p_y][p_x] == 1) {
-					isvisisted[p_y][p_x] = true;
+				if (p_x >= 0 && p_x < M && p_y >= 0 && p_y < N && isvisited[p_y][p_x] == false && map[p_y][p_x] == 1) {
+					isvisited[p_y][p_x] = true;
 					// bfs 는 큐에넣어줄때 방문체크해준다.
 					q.offer(new POINT(p_x, p_y, p.depth + 1));
 				}

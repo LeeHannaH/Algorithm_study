@@ -16,7 +16,6 @@ public class Solution11 {
 				 last_factor = N/i;
 			 }
 		 }
-		 System.out.println(factor);
 		 return factor;
 	 }
 	 public static void main(String[] args) {

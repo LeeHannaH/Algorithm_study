@@ -35,23 +35,28 @@ public class Solution6 {
 		
 		Stack<Integer> downfish = new Stack<>();
 		int upfish = 0;
-		
-		for(int i=0; i<B.length; i++) {
-			if(B[i]==0) {
-				if(downfish.isEmpty()) {
+
+		for (int i = 0; i < B.length; i++) {
+			if (B[i] == 0) {
+				if (downfish.isEmpty()) {
 					upfish++;
-				}else {
-					if(A[i]>downfish.peek()) {
-						downfish.pop();
-					}else {
-						break;
+				} else {
+					while (!downfish.empty()) {
+						if (A[i] > downfish.peek()) {
+							downfish.pop();
+						} else {
+							break;
+						}
+					}
+					if (downfish.isEmpty()) {
+						upfish++;
 					}
 				}
-			}else {
+			} else {
 				downfish.push(A[i]);
 			}
 		}
-		
+
 		System.out.println(upfish+downfish.size());
 		return upfish+downfish.size();
 	}
