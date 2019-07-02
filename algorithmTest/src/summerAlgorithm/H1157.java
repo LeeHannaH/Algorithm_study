@@ -1,6 +1,5 @@
 package summerAlgorithm;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class H1157 {
@@ -22,7 +21,6 @@ public class H1157 {
 			}
 		}
 
-		System.out.println();
-		System.out.println("answer : "+ans);
+		System.out.println(ans);
 	}
 }
